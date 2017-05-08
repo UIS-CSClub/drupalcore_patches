@@ -11,7 +11,8 @@
         "drupal/pathauto": "^1.0",
         "drupal/token": "^1.0",
         "drupal/video_embed_field": "^1.5",
-        "drupal/twitter_block": "^2.1"
+        "drupal/twitter_block": "^2.1",
+        "drupal/smart_trim": "^1.0"
     },
     "replace": {
 

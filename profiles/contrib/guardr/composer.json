@@ -1,0 +1,55 @@
+{
+    "name": "guardrdistro/guardr",
+    "description": "Project template for Drupal 8 sites built with the Guardr distribution.",
+    "type": "drupal-profile",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Mark Shrophire",
+            "role": "mdshrops@shropnet.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+   "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/username_enumeration_prevention": {
+                "Resolves hook_requirements issues": "https://www.drupal.org/files/issues/username_enumeration_prevention-check_phase_runtime-2871931-5.patch"
+            }
+        }
+    },
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/autologout": "1.0.0-rc2",
+        "drupal/console": "~0.10",
+        "drupal/core": "~8.0",
+        "drupal/diff": "1.0.0-rc1",
+        "drupal/guardr": "1.x-dev",
+        "drupal/guardr_core": "1.x-dev",
+        "drupal/login_history": "1.0.0",
+        "drupal/login_security": "1.2.0",
+        "drupal/mass_pwreset": "1.0.0-alpha4",
+        "drupal/password_policy": "3.0.0-alpha3",
+        "drupal/r4032login": "1.x-dev",
+        "drupal/seckit": "1.0.0-alpha2",
+        "drupal/security_review": "1.x-dev",
+        "drupal/session_limit": "1.0.0-beta1",
+        "drupal/username_enumeration_prevention": "1.0.0-beta1",
+        "drush/drush": "~8.0"
+    }
+}

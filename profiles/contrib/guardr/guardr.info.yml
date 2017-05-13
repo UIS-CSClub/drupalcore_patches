@@ -1,0 +1,71 @@
+name: Guardr
+type: profile
+description: 'Drupal distribution for enhanced security of web applications through contributed modules.'
+# core: 8.x
+dependencies:
+#
+# Core modules to install.
+#
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  - ban
+  - update
+#
+# Contibuted modules to install.
+#
+# PCI v3.0 requires 15 minute session timeout.
+  - autologout
+  - diff
+  - guardr_core
+  - login_history
+  - login_security
+# PCI v3.0 requires 90 day password expiration
+# and 7 character minimum containing alphabetic and numeric.
+  - password_policy
+  - r4032login
+  - seckit
+# Shared accounts are not permitted by PCI v3.0.
+  - security_review
+  - session_limit
+  - username_enumeration_prevention
+themes:
+  - bartik
+  - seven
+
+# Information added by Drupal.org packaging script on 2017-04-27
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'guardr'
+datestamp: 1493306390

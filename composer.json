@@ -6,6 +6,9 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "~1.3",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/core": "~8.0",
         "drupal/ctools": "^3.0",
         "drupal/pathauto": "^1.0",
         "drupal/token": "^1.0",
@@ -18,14 +21,13 @@
         "drupal/bootstrap": "^3.4",
         "drupal/guardr": "^1.0@alpha"
     },
-    "replace": {
-
+    "conflict": {
+        "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "preferred-install": "dist",
-        "autoloader-suffix": "Drupal8"
+        "sort-packages": true
     },
     "extra": {
         "_readme": [

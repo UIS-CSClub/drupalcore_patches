@@ -18,6 +18,10 @@ class ComposerStaticInit15e836601d8bee5a7968b5322a5dcb17
     );
 
     public static $prefixLengthsPsr4 = array (
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
+        ),
         'Z' => 
         array (
             'Zumba\\Mink\\Driver\\' => 18,
@@ -77,6 +81,7 @@ class ComposerStaticInit15e836601d8bee5a7968b5322a5dcb17
             'Drupal\\Core\\Composer\\' => 21,
             'Drupal\\Core\\' => 12,
             'Drupal\\Component\\' => 17,
+            'DrupalComposer\\DrupalScaffold\\' => 30,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
             'Doctrine\\Common\\' => 16,
@@ -98,6 +103,10 @@ class ComposerStaticInit15e836601d8bee5a7968b5322a5dcb17
     );
 
     public static $prefixDirsPsr4 = array (
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
+        ),
         'Zumba\\Mink\\Driver\\' => 
         array (
             0 => __DIR__ . '/..' . '/jcalderonzumba/mink-phantomjs-driver/src',
@@ -241,6 +250,7 @@ class ComposerStaticInit15e836601d8bee5a7968b5322a5dcb17
         'Drupal\\Driver\\' => 
         array (
             0 => __DIR__ . '/../..' . '/drivers/lib/Drupal/Driver',
+            1 => __DIR__ . '/../..' . '/drivers/lib/Drupal/Driver',
         ),
         'Drupal\\Core\\Composer\\' => 
         array (
@@ -249,10 +259,16 @@ class ComposerStaticInit15e836601d8bee5a7968b5322a5dcb17
         'Drupal\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Core',
+            1 => __DIR__ . '/../..' . '/core/lib/Drupal/Core',
         ),
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
+            1 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
+        ),
+        'DrupalComposer\\DrupalScaffold\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal-composer/drupal-scaffold/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

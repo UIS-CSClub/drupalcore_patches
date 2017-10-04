@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'cweagans\\Composer\\' => array($vendorDir . '/cweagans/composer-patches/src'),
     'Zumba\\Mink\\Driver\\' => array($vendorDir . '/jcalderonzumba/mink-phantomjs-driver/src'),
     'Zumba\\GastonJS\\' => array($vendorDir . '/jcalderonzumba/gastonjs/src'),
     'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
@@ -41,10 +42,11 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Goutte\\' => array($vendorDir . '/fabpot/goutte/Goutte'),
-    'Drupal\\Driver\\' => array($baseDir . '/drivers/lib/Drupal/Driver'),
+    'Drupal\\Driver\\' => array($baseDir . '/drivers/lib/Drupal/Driver', $baseDir . '/drivers/lib/Drupal/Driver'),
     'Drupal\\Core\\Composer\\' => array($baseDir . '/core/lib/Drupal/Core/Composer'),
-    'Drupal\\Core\\' => array($baseDir . '/core/lib/Drupal/Core'),
-    'Drupal\\Component\\' => array($baseDir . '/core/lib/Drupal/Component'),
+    'Drupal\\Core\\' => array($baseDir . '/core/lib/Drupal/Core', $baseDir . '/core/lib/Drupal/Core'),
+    'Drupal\\Component\\' => array($baseDir . '/core/lib/Drupal/Component', $baseDir . '/core/lib/Drupal/Component'),
+    'DrupalComposer\\DrupalScaffold\\' => array($vendorDir . '/drupal-composer/drupal-scaffold/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib/Doctrine/Common'),

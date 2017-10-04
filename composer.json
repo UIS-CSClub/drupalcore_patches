@@ -20,9 +20,6 @@
         "drupal/bootstrap": "^3.4",
         "drupal/guardr": "^1.0@alpha"
     },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {

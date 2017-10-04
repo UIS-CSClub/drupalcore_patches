@@ -1,3 +1,3 @@
 # Drupal-Core
 
-- composer update drupal/core --with-dependencies
+- composer install

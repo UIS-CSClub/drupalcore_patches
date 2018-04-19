@@ -45,3 +45,5 @@ core/phpunit.xml
 modules/*
 themes/*
 !/core/assets/vendor
+
+.DS_Store
